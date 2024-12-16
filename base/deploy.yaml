@@ -11,6 +11,7 @@ spec:
     metadata:
       labels:
         app: kargo-demo
+        app1: need
     spec:
       containers:
       - name: nginx 
