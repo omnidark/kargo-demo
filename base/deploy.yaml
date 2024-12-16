@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: kargo-demo
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: kargo-demo
@@ -11,7 +11,7 @@ spec:
     metadata:
       labels:
         app: kargo-demo
-        app1: need
+        neapp: test
     spec:
       containers:
       - name: nginx 
