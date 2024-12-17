@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: kargo-demo
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: kargo-demo
@@ -11,10 +11,10 @@ spec:
     metadata:
       labels:
         app: kargo-demo
-        neapp: test
+        app1: t123
     spec:
       containers:
-      - image: public.ecr.aws/nginx/nginx:1.27.1
+      - image: public.ecr.aws/nginx/nginx:1.27.3
         name: nginx
         volumeMounts:
         - mountPath: /usr/share/nginx/html
