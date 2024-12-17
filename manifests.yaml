@@ -14,7 +14,7 @@ spec:
         neapp: test
     spec:
       containers:
-      - image: public.ecr.aws/nginx/nginx:1.27.1
+      - image: public.ecr.aws/nginx/nginx:1.27.3
         name: nginx
         volumeMounts:
         - mountPath: /usr/share/nginx/html
